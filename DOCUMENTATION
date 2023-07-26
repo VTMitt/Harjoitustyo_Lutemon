@@ -1,12 +1,35 @@
+Tekiä: Venne Tanskanen
+Opiskelijanumero: 000536914
 
+Ohjelmassa voi luoda lutemon nimisiä olioita, taistella niillä ja treenata niitä. MainActivityssä ViewPager2, johon on kiinnitetty
+3 fragmenttia, jotka ovat koti, treenaus areena, ja taistelu areena. Jokaista näitä varten on oma Storage luokka , joista lutemoneja voi käyttää kunkin fragmentin
+toiminnallisuuksiin. Lutemoneja voi siirtää kodista käsin muihin Storageihin. Kotona voi listata lutemonit RecycleViewissä ja tallentaa/ladata lutemonit.
+Treenaus areenalla lutemon voi valita joko juoksun, pyöräilyn tai uimisen. Jokainen toiminta kestää eri kauan aikaa ja tätä aikaa näytetään käyttäjälle.
+Taistelu areenalla lutemoit voivat taistella toisiaan vastaan, ja taistelun keskellä lutemonit tekevät ilmeitä riippuen tilanteesta. Taistelusta ja
+treenauksesta saa kehityspisteitä, ja kun niitä on tarpeeksi niin lutemon vahvistuu.
 
-
-
-
-
+Ominaisuudet:
+-Pakolliset ominaisuudet
+-Lutemonit voi listata RecycleView-komponentilla
+-Lutemoneilla on kuva
+-Tiastelu on visualisoitu
+-Tilastot
+-Kuolema pois
+-Satunnaisuus
+-Fragmentit
+-Tietojen tallennus ja lataus
 
 
 Link to video:
+https://lut-my.sharepoint.com/:v:/g/personal/venne_tanskanen_student_lut_fi/EeRNv5KWob9Pk1XbuhnAuacB-qjjWulpYf56AtDwV8KsuQ?e=sFU9KR
+
+Videolla näytetään, että miten lutemoneja luodaan. Sitten näytetään tallentamisen ja lataamisen toimivan. Sitten mennään
+treenaamaan ja lutemon saa kokemusta. Sitten siirretään kaksi lutemonia taistelemaan ja katsotaan miten taistelu menee. 
+Sitten lutemonit palautetaan kotiin, jolloin ne parantuvat täyteen elämään ja niillä on merkitty voitot ja häviöt. Sitten
+siirretään vielä lutemon treenaamaan, ja näytetään että tarpeeksi kokemusta saanut lutemon vahvistuu, ja kehitysmittari menee nollaan.
+Videolla ohjelma ei toimi kovin nopeasti, vaikka se toimii kyllä ihan hyvin kun kamera ei ole päällä. Ruutu muuttuu mustaksikin
+kesken yhdessä kohtaa, vaikka ei niin tee ilman kuvausta. Johtuu varmaan läppäristä.
 
 Link to UML:
+https://lut-my.sharepoint.com/:i:/g/personal/venne_tanskanen_student_lut_fi/Ee_wkbkRl4VNnMga3WSta6kBRVR3y1SAAcXDGzece3GM0Q
 
