@@ -14,7 +14,6 @@ public abstract class Lutemon implements Serializable {
     private int idCounter;
     protected int wins;
     protected int losses;
-    protected int trainingDays;
 
     protected int level;
     protected int image;
@@ -129,20 +128,12 @@ public abstract class Lutemon implements Serializable {
         return losses;
     }
 
-    public int getTrainingDays() {
-        return trainingDays;
-    }
-
     public void setWins(int wins) {
         this.wins = wins;
     }
 
     public void setLosses(int losses) {
         this.losses = losses;
-    }
-
-    public void setTrainingDays(int trainingDays) {
-        this.trainingDays = trainingDays;
     }
 
     public String listOfStats(){ //Lists stats

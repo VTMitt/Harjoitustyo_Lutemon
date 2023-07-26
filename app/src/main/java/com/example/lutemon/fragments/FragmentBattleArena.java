@@ -30,6 +30,7 @@ public class FragmentBattleArena extends Fragment {
     Context context;
 
     Button button;
+    int rgSize;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,20 +66,25 @@ public class FragmentBattleArena extends Fragment {
             radioGroup2.addView(newRB2);
             i++;
         }
+        rgSize = i;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Lutemon battler1 = BattleStorage.getInstanceOf().getLutemon(radioGroup1.getCheckedRadioButtonId() - 1_000);
-                Lutemon battler2 = BattleStorage.getInstanceOf().getLutemon(radioGroup2.getCheckedRadioButtonId() - 10_000);
-                System.out.println(battler1.getId());
-                System.out.println(battler2.getId());
-                Bundle vars = new Bundle();
-                vars.putString("vars1Id", battler1.getId());
-                vars.putString("vars2Id", battler2.getId());
-                Fragment fragment;
-                fragment = new FragmentBattle();
-                fragment.setArguments(vars); //Moves chosen lutemons to FragmentBattle
-                getParentFragmentManager().beginTransaction().replace(R.id.frameBattle,fragment).commit();
+                if(rgSize != 0) {
+                    if((radioGroup1.getCheckedRadioButtonId() != -1) && (radioGroup2.getCheckedRadioButtonId() != -1) ) { // learned this here https://stackoverflow.com/questions/24992936/how-to-check-if-a-radiobutton-is-checked-in-a-radiogroup-in-android
+                        Lutemon battler1 = BattleStorage.getInstanceOf().getLutemon(radioGroup1.getCheckedRadioButtonId() - 1_000);
+                        Lutemon battler2 = BattleStorage.getInstanceOf().getLutemon(radioGroup2.getCheckedRadioButtonId() - 10_000);
+                        System.out.println(battler1.getId());
+                        System.out.println(battler2.getId());
+                        Bundle vars = new Bundle();
+                        vars.putString("vars1Id", battler1.getId());
+                        vars.putString("vars2Id", battler2.getId());
+                        Fragment fragment;
+                        fragment = new FragmentBattle();
+                        fragment.setArguments(vars); //Moves chosen lutemons to FragmentBattle
+                        getParentFragmentManager().beginTransaction().replace(R.id.frameBattle, fragment).commit();
+                    }
+                }
             }
         });
 

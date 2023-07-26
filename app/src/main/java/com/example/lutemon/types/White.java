@@ -14,7 +14,6 @@ public class White extends Lutemon {
         this.max_health = 20;
         this.wins = 0;
         this.losses = 0;
-        this.trainingDays = 0;
         this.level = 1;
         this.image = R.drawable.baseline_icecream_24;
     }

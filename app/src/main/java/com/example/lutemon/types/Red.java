@@ -15,7 +15,6 @@ public class Red extends Lutemon {
         this.level = 1;
         this.wins = 0;
         this.losses = 0;
-        this.trainingDays = 0;
         this.image = R.drawable.baseline_fireplace_24;
     }
 }

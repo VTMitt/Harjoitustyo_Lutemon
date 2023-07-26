@@ -40,9 +40,8 @@ public class Storage {
             lutemons = (ArrayList<Lutemon>) lutemonReader.readObject();
             lutemonReader.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+
         } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
         }
     }
 
