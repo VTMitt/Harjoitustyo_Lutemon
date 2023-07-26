@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808BC34A"
+    tools:context=".fragments.FragmentHome" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="cursive"
+        android:text="Welcome Home!"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnCreateLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="10dp"
+        android:onClick="switchToCreate"
+        android:text="Create"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/btnLoadLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Load Lutemons"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="70dp"/>
+
+    <Button
+        android:id="@+id/btnSaveLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="Save Lutemons"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="70dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="170dp"
+        >
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgList"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:layout_gravity="right|top"
+        android:src="@drawable/baseline_format_list_bulleted_24"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btnManage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="200dp"
+        />
+</FrameLayout>

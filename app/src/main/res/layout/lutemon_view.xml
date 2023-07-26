@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:background="#9C27B0">
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9C27B0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtAttack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attack"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtDefence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Defence"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtLife"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtExp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtWins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wins"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtLosses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Losses"
+            android:textColor="#000000" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

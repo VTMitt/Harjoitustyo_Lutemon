@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentSwim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.trainings.FragmentSwim">
+
+    <Button
+        android:id="@+id/btnSwim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:text="Swim" />
+
+    <TextView
+        android:id="@+id/txtInformSwim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="70dp"
+        android:text="Wait 10 seconds after pressing"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/txtSwimCountDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="120dp"
+        android:text=" "
+        android:textSize="20sp" />
+</FrameLayout>

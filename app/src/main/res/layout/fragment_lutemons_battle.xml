@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.lutemonsIn.FragmentLutemonsBattle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Where to"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/rgLutemonsInBattle"
+            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintStart_toStartOf="@+id/rgLutemonsInBattle"
+            app:layout_constraintTop_toBottomOf="@+id/rgLutemonsInBattle" />
+
+        <RadioGroup
+            android:id="@+id/rgLutemonsInBattle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgLocations3"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+            <RadioButton
+                android:id="@+id/rbHome3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+
+            <RadioButton
+                android:id="@+id/rbTraining3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TrainingArea" />
+
+            <RadioButton
+                android:id="@+id/rbBattle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BattleArena" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnMove3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Move"
+            app:layout_constraintEnd_toEndOf="@+id/rgLocations3"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="@+id/rgLocations3"
+            app:layout_constraintTop_toBottomOf="@+id/rgLocations3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
